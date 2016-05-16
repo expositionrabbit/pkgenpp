@@ -24,6 +24,11 @@ public class RawData {
 		}
 	}
 	
+	public Document toDocument() {
+		Document doc = new Document(this);
+		return doc;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
